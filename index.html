@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Xam321</title>
+        <style>
+            @font-face {
+            font-family: "Jorick";
+            src: url("xam321/fonts/Jorick-Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            }
+            body {
+                background-color: white;
+                margin: 0%;
+            }
+            .start {
+                background-color: #00a550;
+                transition-duration: 0.5s;
+                height: 130px;
+                width: 100%;
+                font-size: 175%;
+                color: black;
+                margin: 0%;
+                font-family: Jorick;
+                padding-top: 5%;
+            }
+            .start2 {
+                text-align: center;
+                transition-duration: 0.5s;
+                font-size: 200%;
+            }
+            .start2:hover {
+                transition-duration: 0.5s;
+                font-size: 185%;
+            }
+            .start h1 {
+                margin: 0%;
+            }
+            .menu {
+                margin: 0%;
+                background-color: greenyellow;
+                width: 100%;
+                font-size: 100%;
+                position: sticky;
+                top: 0%;
+                font-family: Jorick;
+                border: solid black 2px;
+            }
+            button {
+                color: black;
+                border: 0px;
+                background-color: greenyellow;
+                height: 150%;
+                width: 33%;
+                font-size: 200%;
+                border-radius: 10px;
+                transition-duration: 0.5s;
+                font-family: Jorick;
+            }
+            button:hover {
+                transition-duration: 1s;
+                border-radius: 10px;
+                height: 200%;
+                text-decoration: underline;
+            }
+            .button1 {
+                text-align: right;
+            }
+            .button2 {
+                text-align: center;
+            }
+            .button3 {
+                text-align: left;
+            }
+            .zagolovok {
+                font-size: 250%;
+                font-family: Jorick;
+            }
+            .razdel1 {
+                padding: 0%;
+                width: 96%;
+                padding: 2%;
+                font-size: 150%; 
+            }
+            .razdel2 {
+                border: 10px;
+                padding: 0%;
+                width: 96%;
+                padding: 2%;
+                font-size: 150%; 
+            }
+            .razdel3 {
+                width: 96%;
+                padding: 2%;
+                font-size: 150%; 
+            }
+            img {
+                display: block;
+                margin: auto;
+                transition-duration: 0.5s;
+                max-width: 20%;
+                max-height: 20%;
+                border-radius: 10px;
+                border: 1px solid black;
+            }
+            img:hover {
+                max-width: 50%;
+                max-height: 50%;
+                transition-duration: 0.5s;
+            }
+            .zadacha {
+                background-color: #00a550;
+                padding: 1%;
+                border-radius: 15px;
+                transition-duration: 0.5s;
+                border: 4px #00a550 solid;
+            }
+            .zadacha:hover {
+                transition-duration: 0.5s;
+                background-color: white;
+            }
+            .kontyr {
+                height: auto;
+                margin-top: 1%;
+            }
+            .konstrykcii2 {
+                border-radius: 10px;
+                background-color: white;
+                transition-duration: 0.5s;
+                text-align: center;
+                padding: 2%;
+            }
+            .konstrykcii2:hover {
+                background-color: #00a550;
+                transition-duration: 0.5s;
+            }
+            .a1 {
+                color:red;
+                transition-duration: 0.5s;
+            }
+            .a1:hover {
+                color: blue;
+            }
+            .a2 {
+                margin-top: 1%;
+                color: blue;
+                transition-duration: 0.5s;
+                text-align: right;
+                display: block;
+
+            }
+            .a2:hover {
+                color: red;
+                transition-duration: 0.5s;
+            }
+            .vazhno {
+                color: black;
+            }
+            .Jorick {
+                font-size: 200%;
+                font-family: Jorick;
+            }
+            .molodezh {
+                float: right;
+                max-width: 30%;
+                max-height: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="start" id="start">
+            <h1 class="start2">Задачи и конструкции для Cuboro</h1>
+            <br>
+            <a class="a2" onclick="{navigator.clipboard.writeText('123max2012imx4@gmail.com'); alert('Email скопирован в буфер обмена!');}">123max2012imx4@gmail.com</a>
+        </div>
+        <div class="menu">
+            <button onclick="button1()" class="button1" id="button1">Главная</button>
+            <button onclick="button2()" class="button2" id="button2">Задачи</button>
+            <button onclick="button3()" class="button3" id="button3">Конструкции</button>
+        </div>
+        <div class="razdel1" id="razdel1">
+            <img class="molodezh" src="xam321/molodezh.jpg">
+            <h4 class="vazhno">Важно что данный сайт в основном рассчитан на наборы Cuboro Basic!</h4>
+            <h3>Что такое вообще Cuboro и зачем это нужно?</h3>
+            <ul>
+                <li>Cuboro - это деревянный конструктор, состоящий из кубиков с углублениями и отверстиями для проката стеклянных шариков</li>
+                <li>Данный конструктор используется для развития пространственного мышления и обучения в инженерии, что очень важно и актуально в наше время</li>
+            </ul>
+            <h3>Как понять насколько хороша построенная нами конструкция?</h3>
+            <p>Для оценки какой-либо конструкции в Cuboro обычно используют подсчет баллов по формуле: b = k * 2 + n</p>
+            <ul>
+                <li>b - количество баллов</li>
+                <li>k - количество кубиков, которых коснулся шарик во время своего проката</li>
+                <li>n - количество кубиков использованных в конструкции</li>
+            </ul>
+            <h4>Примеры подсчета баллов для понимания:</h4>
+            <p>Пример 1</p>
+            <ol>
+                <li>Считать будем по формуле выше</li>
+                <li>Пусть в конструкции задействовано 29 кубиков, а шарик коснётся только до 19 кубиков при прокате</li>
+                <li>Значит n = 29; k = 19; b = ?</li>
+                <li>Подставляем значения и получаем что b = 19 * 2 + 29, решив этот пример мы получаем что в нашей конструкции 67 баллов</li>
+                <li>Ответ: 67 баллов</li>
+            </ol>
+            <p>Пример 2</p>
+            <ol>
+                <li>Считать будем по формуле выше</li>
+                <li>Пусть в конструкции задействовано все 30 кубиков, а сделает 23 касания за весь прокат</li>
+                <li>Значит n = 30; k = 23; b = ?</li>
+                <li>Подставляем значения и получаем что b = 23 * 2 + 30, решив этот пример мы получаем что в нашей конструкции 76 баллов</li>
+                <li>Ответ: 76 баллов</li>
+            </ol>
+
+            <h3>Если вы хотите поделиться новыми задачами и конструкциями с другими пользователями отправляйте их на нашу почту <a class="a1" onclick="{navigator.clipboard.writeText('123max2012imx4@gmail.com'); alert('Email скопирован в буфер обмена!');}">123max2012imx4@gmail.com</a>, мы всегда будем рады разместить новую задачу или конструкцию на сайте</h3>
+            <h3>Авторы данного сайта &#128736;</h3>
+            <ol>
+                <li>Рожковец Максим Игоревич</li>
+                <li>Гудожников Фёдор Михайлович</li>
+                <li>Артамонов Артём Романович</li>
+            </ol>
+            <h3>Идеи добавления, новые предложения и все вопросы к поддержке отправлять на почту: <a  class="a1"  onclick="{navigator.clipboard.writeText('123max2012imx4@gmail.com'); alert('Email скопирован в буфер обмена!');}">123max2012imx4@gmail.com</a></h3>
+        </div>
+        <div class="razdel2" id="razdel2">
+            <h2 class="zagolovok">Задачи</h2>
+            <ol>
+                <li>
+                    <div class="zadacha">
+                        Собрать конструкцию, набирающую наибольшее количество баллов (рис. 1) с учетом заданных требований:
+                        <ol>
+                            <li>Конструкция должна быть устойчивой и состоять только из кубиков Cuboro Basic (30 кубиков)</li>
+                            <li>На всех выделенных клетках должны находиться кубики, формирующие направления движения дорожки</li>
+                            <li>В качестве стартового кубика используйте кубик №12</li>
+                            <li>Движение шарика по конструкции должно быть плавным</li>
+                            <li>Кубик № 4 шарик должен коснуться три раза</li>
+                            <li>Определите выход из конструкции самостоятельно</li>
+                        </ol>
+                        <img src="xam321/1.jpeg">
+                    </div> 
+                </li>
+                <br>
+                <li>
+                    <div class="zadacha">
+                        Собрать конструкцию, набирающую наибольшее количество баллов (рис. 1) с учетом заданных требований:
+                        <ol>
+                            <li>Конструкция должна быть устойчивой и состоять только из кубиков Cuboro Basic (30 кубиков)</li>
+                            <li>Кубики должны находиться на всех серых ячейках, располагать кубики на белых ячейках нельзя</li>
+                            <li>Движения шарика в конструкции должно быть плавным</li>
+                            <li>Придумайте точку старта из кубика №12 на 3-м уровне, выход из конструкции – кубик №10</li>
+                            <li>Разрешается сдвиг, поворот кубиков, мосты, подвесы и др. креативные решения</li>
+                        </ol>
+                        <img src="xam321/2.jpg">
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <div class="zadacha">
+                        Построить фигуру по заданным критериям:<br>
+                        Старт в кубике №12 на 4 или 5 уровне (направление старта указано стрелкой), 3 кубика №11 должны быть переходами с верхнего уровня на нижерасположенный уровень (направление перехода указано стрелкой, кубики могут быть на любом уровне, но строго в своей клетке), шарик   должен плавно спускаться c уровня на уровень и плавно выкатываться на стол. При строительстве кубики стоят друг над другом строго по координатной сетке, без смещений. Все кубики в получившейся фигуре (кроме кубиков 11 и 12 в строго указанных клетках относительно друг друга) при виде сверху должны быть рабочими, т.е. по ним сверху по желобу или внутри по тоннелю шарик должен хотя бы 1 раз проехать!<br>
+                        Ваша цель:<br>
+                        построить максимально эффективную конструкцию из набора Cuboro Basis (30 кубиков)
+                        <img src="xam321/3.jpg">
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <div class="zadacha">
+                        Собрать конструкцию, набирающую наибольшее количество баллов (рис. 1) с учетом заданных требований:
+                        <ol>
+                            <li>Конструкция должна быть устойчивой и состоять только из кубиков Cuboro Basic (30 кубиков)</li>
+                            <li>Шарик обязательно должен проехать все указанные кубики и выйти в точку EXIT</li>
+                            <li>Кубик №3 шарик должен коснуться три раза!</li>
+                            <li>Кубики с изогнутыми желобами могут находиться в любом положении, но в данной клетке</li>
+                            <li>Шарик должен коснуться указанные кубики с изогнутым желобом два раза</li>
+                            <li>Старт из кубика №12</li>
+                            <li> Движение шарика по конструкции должно быть плавным</li>
+                        </ol>
+                        <img src="xam321/4.jpg">
+                    </div> 
+                </li>
+                <br>
+                <li>
+                    <div class="zadacha">
+                        Соберите конструкцию с наибольшим количеством баллов.
+                        <ul>
+                            <li>Условие: Спроектируйте и постройте конструкцию (длиной не более 7 кубиков), по которой шарик будет катиться ровно 10 секунд</li>
+                            <li>Допустимое отклонение — не более 0,5 секунды</li>
+                        </ul>
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <div class="zadacha">
+                        Соберите конструкцию с наибольшим количеством баллов.
+                        <ul>
+                            <li>Условие: Постройте конструкцию, в которой шарик в своем движении должен преодолеть промежуток (разрыв) между двумя кубиками, не касаясь поверхности стола</li>
+                            <li>Шарик должен пролететь по воздуху не менее 5 см и продолжить движение по желобу</li>
+                        </ul>
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <div class="zadacha">
+                        Соберите конструкцию с наибольшим количеством звёзд.
+                        <ul>
+                            <li>Условие: Используя не больше 25 кубиков, постройте самую высокую башню (конструкцию), по которой шарик прокатится от самого верхнего уровня до наинижнего</li>
+                            <li>Шарик не должен выпадать, а конструкция — падать</li>
+                            <li>Звёзды вычисляются по формуле: z = k * l - n 
+                                <ul>
+                                    <li>z - количество звёзд</li>
+                                    <li>k - количество касаний</li>
+                                    <li>n - количество использованных кубиков в конструкции</li>
+                                    <li>l - количество уровней в конструкции (высота)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+            <h3 class="Jorick">Разные контуры для построения:</h3>
+            <p>Контуры часто используют на конкурсах и соревнованиях как задания, цель которых обычно создать конструкцию дающую наибольшее количество баллов причем основание должно точно повторять данный контур. Данные контуры даны как задания на создание конструкций набирающих наибольшее количество баллов имеющих такое же основание как и контур</p>
+            <div>
+                <img src="xam321/я2.jpg" class="kontyr">
+                <img src="xam321/я3.jpg" class="kontyr">
+                <img src="xam321/я4.jpg" class="kontyr">
+                <img src="xam321/я5.jpg" class="kontyr">
+                <img src="xam321/я6.jpg" class="kontyr">
+                <img src="xam321/я7.jpg" class="kontyr">
+                <img src="xam321/я8.jpg" class="kontyr">
+                <img src="xam321/я9.jpg" class="kontyr">
+                <img src="xam321/я10.jpg" class="kontyr">
+                <img src="xam321/я11.jpg" class="kontyr">
+                <img src="xam321/я12.jpg" class="kontyr">
+                <img src="xam321/я13.jpg" class="kontyr">
+                <img src="xam321/я14.jpg" class="kontyr">
+                <img src="xam321/я15.jpg" class="kontyr">
+                
+            </div>
+        </div>
+        <div class="razdel3" id="razdel3">
+            <h2 class="zagolovok">Конструкции</h2>
+            <ol>
+                <li>
+                    <div class="konstrykcii2">
+                        <img src="xam321/v1.jpg" class="konstrykcii">
+                        Обычная лестница - без креатива
+                    </div>
+                </li>
+                <li>
+                    <div class="konstrykcii2">
+                        <img src="xam321/v6.jpg" class="konstrykcii">
+                        Лестница с подвалом - без креатива
+                    </div>
+                </li>
+                <li>
+                    <div class="konstrykcii2">
+                        <img src="xam321/v7.jpg" class="konstrykcii">
+                        Просто много баллов - без креатива
+                    </div>
+                </li>
+                <li>
+                    <div class="konstrykcii2">
+                        <img src="xam321/v2.jpg" class="konstrykcii">
+                        4 Пирамида - без креатива
+                    </div>
+                </li>
+                <li>
+                    <div class="konstrykcii2">
+                        <img src="xam321/v3.jpg" class="konstrykcii">
+                        Обратный путь - с использованием креатива
+                    </div>
+                </li>
+                <li>
+                    <div class="konstrykcii2">
+                        <img src="xam321/v4.jpg" class="konstrykcii">
+                        Ущелье - с использованием креатива
+                    </div>
+                </li>
+                <li>
+                    <div class="konstrykcii2">
+                        <img src="xam321/v5.jpg" class="konstrykcii">
+                        Мостик - с использованием креатива
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </body>
+    <script>
+        function button1() {
+            document.getElementById("start").scrollIntoView({behavior: "smooth"});
+        }
+        function button2() {
+            document.getElementById("razdel2").scrollIntoView({behavior: "smooth"});
+        }
+        function button3() {
+            document.getElementById("razdel3").scrollIntoView({behavior: "smooth"});
+        }
+    </script>
+</html>
